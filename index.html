@@ -20,11 +20,12 @@
                 <label>Secret Key:</label>
                 <input type="password" id="secret_key" placeholder="SECRET KEY" value="" />
                 <label>Session Token (if using MFA):</label>
-                <input type="password" id="session_token" placeholder="SESSION TOKEN" value="" />
+                <input type="hidden" id="session_token" placeholder="SESSION TOKEN" value="" />
             </div>
             <div class="col hide">
                 <label>Language: </label>
-                <select id="language">
+                <input type="hidden" id="language" value="en-US" />
+                <select id="languagex">
                     <optgroup label="English">
                         <option value="en-US">US English (en-US)</option>
                         <option value="en-AU">Australian English (en-AU)</option>
